@@ -15,7 +15,7 @@ import 'UI/Screens/success_result.dart';
 import 'UI/Screens/upi_payment_screen.dart';
 import 'UI/Screens/verification_screen.dart';
 import 'provider/loan_provider.dart';
-import 'provider/upiID_provider.dart';
+import 'provider/upi_id_provider.dart';
 import 'provider/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

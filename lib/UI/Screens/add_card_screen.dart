@@ -108,7 +108,7 @@ class _AddCardScreenState extends State<AddCardScreen> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  SizedBox(height: sectionSpacingHeightMedium),
+                  const SizedBox(height: sectionSpacingHeightMedium),
                   const Text(
                     "Add Card",
                     style: screenHeadingStyle,
@@ -117,11 +117,11 @@ class _AddCardScreenState extends State<AddCardScreen> {
                     "Choose desired Payment Method to Add",
                     style: screenSubHeadingStyle,
                   ),
-                  SizedBox(height: sectionSpacingHeightLarge),
+                  const SizedBox(height: sectionSpacingHeightLarge),
                   _buildCardNumberTextField(),
-                  SizedBox(height: sectionSpacingHeightMedium),
+                  const SizedBox(height: sectionSpacingHeightMedium),
                   _buildExpDateCVVRow(),
-                  SizedBox(height: sectionSpacingHeightMedium),
+                  const SizedBox(height: sectionSpacingHeightMedium),
                   _buildCardNameTextField(),
                 ],
               ),

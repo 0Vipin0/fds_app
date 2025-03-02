@@ -1,4 +1,4 @@
-import '../Models/Loan.dart';
+import '../Models/loan.dart';
 import 'package:flutter/cupertino.dart';
 
 class LoansProvider with ChangeNotifier {
@@ -49,8 +49,6 @@ class LoansProvider with ChangeNotifier {
       tenure: val.tenure,
       isPaid: val.isPaid,
     );
-    print(
-        "${item.loanID},${item.loanAmount},${item.startDate},${item.endDate},${item.tenure}");
     _items.add(item);
     notifyListeners();
   }

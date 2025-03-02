@@ -1,4 +1,4 @@
-import '../../provider/upiID_provider.dart';
+import '../../provider/upi_id_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -140,12 +140,12 @@ class _SelectUpiScreenState extends State<SelectUpiScreen> {
                   ),
                   GestureDetector(
                     onTap: () => Navigator.pushNamed(context, "add_upi"),
-                    child: Row(
+                    child: const Row(
                       children: <Widget>[
                         SizedBox(width: changeUpiIconSize),
                         Icon(Icons.add_box, color: changeUpiIconColor),
                         SizedBox(width: changeUpiSpacing),
-                        const Text("Change UPI ID", style: changeUpiTextStyle),
+                        Text("Change UPI ID", style: changeUpiTextStyle),
                       ],
                     ),
                   ),

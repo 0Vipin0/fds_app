@@ -65,11 +65,8 @@ class _SignUpFormState extends State<SignUpForm> {
   final _phoneNode = FocusNode();
   final _signupKey = GlobalKey<FormState>();
 
-  String? _name;
-  String? _email;
   String? _password;
   String? _confirmPassword;
-  String? _phoneNumber;
 
   @override
   void dispose() {
@@ -81,11 +78,6 @@ class _SignUpFormState extends State<SignUpForm> {
 
   void _saveform() {
     _signupKey.currentState?.save();
-    print(_name);
-    print(_email);
-    print(_password);
-    print(_confirmPassword);
-    print(_phoneNumber);
   }
 
   @override
@@ -220,11 +212,6 @@ class _SignUpFormState extends State<SignUpForm> {
         onPressed: () {
           if (_password == _confirmPassword) {
             Navigator.pushNamed(context, 'home_screen');
-            print(_name);
-            print(_email);
-            print(_password);
-            print(_confirmPassword);
-            print(_phoneNumber);
           }
         },
         borderRadius: BorderRadius.circular(buttonBorderRadius),

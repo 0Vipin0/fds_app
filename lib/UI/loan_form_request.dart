@@ -1,4 +1,4 @@
-import '../Models/Loan.dart';
+import '../Models/loan.dart';
 import '../provider/loan_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -129,7 +129,7 @@ class _LoanRequestFormState extends State<LoanRequestForm> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    Text("Get Credit ", style: getCreditTextStyle),
+                    const Text("Get Credit ", style: getCreditTextStyle),
                     Expanded(
                       child: CupertinoTextField(
                         controller: _creditController,
@@ -144,7 +144,7 @@ class _LoanRequestFormState extends State<LoanRequestForm> {
                             loanAmount: credit,
                           );
                         },
-                        suffix: Icon(
+                        suffix: const Icon(
                           Icons.keyboard_arrow_down,
                           color: buttonColor,
                         ),
@@ -172,7 +172,7 @@ class _LoanRequestFormState extends State<LoanRequestForm> {
                   ],
                 ),
                 const SizedBox(height: sizedBoxHeightMedium),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text("For Tenure of  ", style: getCreditTextStyle),

@@ -106,9 +106,9 @@ class _SignUpScreenState extends State<SignUpScreen>
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   SizedBox(height: height * 0.04),
-                  Padding(
+                  const Padding(
                     padding: appBarIconPadding,
-                    child: const Align(
+                    child: Align(
                       alignment: Alignment.centerLeft,
                       child: Icon(Icons.chevron_left, size: iconSize),
                     ),
@@ -131,14 +131,14 @@ class _SignUpScreenState extends State<SignUpScreen>
               controller: _tabController,
               indicatorColor: buttonColor,
               indicatorWeight: tabBarIndicatorWeight,
-              tabs: [
+              tabs: const [
                 Padding(
                   padding: tabPadding,
-                  child: const Text("Login", style: tabTextStyle),
+                  child: Text("Login", style: tabTextStyle),
                 ),
                 Padding(
                   padding: tabPadding,
-                  child: const Text("Signup", style: tabTextStyle),
+                  child: Text("Signup", style: tabTextStyle),
                 ),
               ],
             ),

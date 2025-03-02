@@ -1,4 +1,4 @@
-import '../Models/UpiID.dart';
+import '../Models/upi_id.dart';
 import 'package:flutter/cupertino.dart';
 
 class UpiIDProvider with ChangeNotifier {

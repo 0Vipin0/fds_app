@@ -25,7 +25,6 @@ class _SuccessResultScreenState extends State<SuccessResultScreen> {
       final loanID = ModalRoute.of(context)?.settings.arguments as String?;
       if (loanID != null) {
         _currentLoanID = loanID;
-        print(_currentLoanID);
       }
       _init = false;
     }

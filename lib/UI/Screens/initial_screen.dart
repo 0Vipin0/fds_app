@@ -136,8 +136,8 @@ class InitialScreen extends StatelessWidget {
                 child: TextButton(
                   onPressed: () {},
                   style: TextButton.styleFrom(backgroundColor: buttonColor),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
                     child: Text(
                       "Login/Register with Facebook",
                       style: buttonTextStyle,
@@ -190,7 +190,7 @@ class InitialScreen extends StatelessWidget {
             ),
           ),
           onPressed: () => Navigator.pushNamed(context, "login_signup"),
-          child: Text("Log in", style: buttonTextStyle),
+          child: const Text("Log in", style: buttonTextStyle),
         ),
       ),
     );

@@ -61,7 +61,7 @@ class VerificationScreen extends StatelessWidget {
         ),
         child: Column(
           children: <Widget>[
-            SizedBox(height: screenTopPadding),
+            const SizedBox(height: screenTopPadding),
             Row(
               children: <Widget>[
                 Padding(
@@ -82,13 +82,13 @@ class VerificationScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   const Text("Verification", style: verificationTitleStyle),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(
                       left: descriptionPaddingHorizontal,
                       right: descriptionPaddingHorizontal,
                       top: descriptionPaddingTop,
                     ),
-                    child: const Text(
+                    child: Text(
                       "Complete filling all the details of the below ones to get your profile approved for the credit limit.",
                       style: verificationDescriptionStyle,
                       textAlign:
@@ -97,7 +97,7 @@ class VerificationScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(
+                    padding: const EdgeInsets.only(
                       left: shadowPaddingHorizontal,
                       right: shadowPaddingHorizontal,
                       top: shadowPaddingTop,
@@ -118,26 +118,26 @@ class VerificationScreen extends StatelessWidget {
                           ),
                           child: Container(
                             color: whiteColor,
-                            child: Column(
+                            child: const Column(
                               children: <Widget>[
                                 Padding(
-                                  padding: const EdgeInsets.only(
+                                  padding: EdgeInsets.only(
                                     left: 8,
                                     right: 8,
                                     top: listTileContentPaddingVertical,
                                   ),
                                   child: ListTile(
-                                    leading: const Icon(
+                                    leading: Icon(
                                       Icons.check,
                                       color: verificationIconColor,
                                     ),
-                                    title: const Text(
+                                    title: Text(
                                       "College & Other Details",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    trailing: const Icon(
+                                    trailing: Icon(
                                       Icons.chevron_right,
                                       color: verificationIconColor,
                                     ),
@@ -148,25 +148,25 @@ class VerificationScreen extends StatelessWidget {
                                     left: separatorPaddingHorizontal,
                                     right: 35.0,
                                   ),
-                                  child: const MySeparator(color: greyColor),
+                                  child: MySeparator(color: greyColor),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(
+                                  padding: EdgeInsets.only(
                                     left: 8,
                                     right: 8,
                                   ),
                                   child: ListTile(
-                                    leading: const Icon(
+                                    leading: Icon(
                                       Icons.check,
                                       color: verificationIconColor,
                                     ),
-                                    title: const Text(
+                                    title: Text(
                                       "College Friend",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    trailing: const Icon(
+                                    trailing: Icon(
                                       Icons.chevron_right,
                                       color: verificationIconColor,
                                     ),
@@ -177,22 +177,22 @@ class VerificationScreen extends StatelessWidget {
                                     left: separatorPaddingHorizontal,
                                     right: 35.0,
                                   ),
-                                  child: const MySeparator(color: greyColor),
+                                  child: MySeparator(color: greyColor),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(
+                                  padding: EdgeInsets.only(
                                     left: 8,
                                     right: 8,
                                   ),
                                   child: ListTile(
-                                    leading: const SizedBox(),
-                                    title: const Text(
+                                    leading: SizedBox(),
+                                    title: Text(
                                       "Connect Social Account",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    trailing: const Icon(
+                                    trailing: Icon(
                                       Icons.chevron_right,
                                       color: verificationIconColor,
                                     ),
@@ -203,22 +203,22 @@ class VerificationScreen extends StatelessWidget {
                                     left: separatorPaddingHorizontal,
                                     right: 35.0,
                                   ),
-                                  child: const MySeparator(color: greyColor),
+                                  child: MySeparator(color: greyColor),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(
+                                  padding: EdgeInsets.only(
                                     left: 8,
                                     right: 8,
                                   ),
                                   child: ListTile(
-                                    leading: const SizedBox(),
-                                    title: const Text(
+                                    leading: SizedBox(),
+                                    title: Text(
                                       "Basic Details",
                                       style: TextStyle(
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    trailing: const Icon(
+                                    trailing: Icon(
                                       Icons.chevron_right,
                                       color: verificationIconColor,
                                     ),
@@ -229,7 +229,7 @@ class VerificationScreen extends StatelessWidget {
                                     left: separatorPaddingHorizontal,
                                     right: 35.0,
                                   ),
-                                  child: const MySeparator(color: greyColor),
+                                  child: MySeparator(color: greyColor),
                                 ),
                                 SizedBox(height: listTilePaddingVertical),
                                 Center(

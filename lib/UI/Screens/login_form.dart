@@ -89,8 +89,6 @@ class _LoginFormState extends State<LoginForm> {
 
   void _saveform() {
     _key.currentState?.save();
-    print(_email);
-    print(_password);
   }
 
   @override
@@ -247,9 +245,9 @@ class _LoginFormState extends State<LoginForm> {
                 style: TextButton.styleFrom(
                   backgroundColor: facebookButtonColor,
                 ),
-                child: Padding(
+                child: const Padding(
                   padding: facebookButtonPadding,
-                  child: const Text(
+                  child: Text(
                     "Login/Register with Facebook",
                     style: facebookLoginTextStyle,
                   ),

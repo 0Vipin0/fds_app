@@ -1,5 +1,5 @@
-import '../../Models/UpiID.dart';
-import '../../provider/upiID_provider.dart';
+import '../../Models/upi_id.dart';
+import '../../provider/upi_id_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -96,13 +96,13 @@ class _AddUpiIdScreenState extends State<AddUpiIdScreen> {
           key: _addKey,
           child: ListView(
             children: <Widget>[
-              SizedBox(height: sectionSpacingHeightMedium),
+              const SizedBox(height: sectionSpacingHeightMedium),
               const Text("Add UPI ID", style: screenHeadingStyle),
               const Text(
                 "Choose Desired UPI ID to get the Loan amount",
                 style: screenSubHeadingStyle,
               ),
-              SizedBox(height: sectionSpacingHeightLarge),
+              const SizedBox(height: sectionSpacingHeightLarge),
               _buildUpiIdInputSection(),
             ],
           ),
@@ -147,9 +147,9 @@ class _AddUpiIdScreenState extends State<AddUpiIdScreen> {
             ),
             title: const Text("UPI ID"),
           ),
-          SizedBox(height: sectionSpacingHeightMedium),
-          Align(
-            alignment: const Alignment(-0.7, 0),
+          const SizedBox(height: sectionSpacingHeightMedium),
+          const Align(
+            alignment: Alignment(-0.7, 0),
             child: Text(
               "Enter your Google Pay Number or UPI ID",
               style: hintTextStyle,
@@ -174,7 +174,7 @@ class _AddUpiIdScreenState extends State<AddUpiIdScreen> {
           ),
           Row(
             children: <Widget>[
-              SizedBox(width: sectionSpacingHeightSmall),
+              const SizedBox(width: sectionSpacingHeightSmall),
               Checkbox(
                 tristate: true,
                 activeColor: checkboxActiveColor,
@@ -187,7 +187,7 @@ class _AddUpiIdScreenState extends State<AddUpiIdScreen> {
                   });
                 },
               ),
-              SizedBox(width: checkboxSpacingWidth),
+              const SizedBox(width: checkboxSpacingWidth),
               const Text("Make it Primary UPI ID", style: sectionHeadingStyle),
             ],
           ),

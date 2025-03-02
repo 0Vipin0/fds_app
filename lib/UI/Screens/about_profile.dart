@@ -88,12 +88,12 @@ class _AboutProfileState extends State<AboutProfile> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        SizedBox(height: profileHeadingSpacingVertical),
+        const SizedBox(height: profileHeadingSpacingVertical),
         Text(
           heading,
           style: profileHeadingStyle,
         ),
-        SizedBox(height: profileHeadingSpacingVertical),
+        const SizedBox(height: profileHeadingSpacingVertical),
         Text(
           subHeading,
           style: profileSubHeadingStyle,
@@ -111,11 +111,11 @@ class _AboutProfileState extends State<AboutProfile> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Text(
+            const Text(
               "Receive Notification",
               style: profileHeadingStyle,
             ),
-            SizedBox(height: profileHeadingSpacingVertical),
+            const SizedBox(height: profileHeadingSpacingVertical),
             Text(
               userData.isNotificationEnabled == true ? "Enable" : "Disable",
               style: profileSubHeadingStyle,
@@ -145,19 +145,19 @@ class _AboutProfileState extends State<AboutProfile> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Text(
+            const Text(
               "UPI ID",
               style: profileHeadingStyle,
             ),
-            SizedBox(height: profileHeadingSpacingVertical),
+            const SizedBox(height: profileHeadingSpacingVertical),
             Text(
               userData.upiID ?? "",
               style: profileSubHeadingStyle,
             ),
           ],
         ),
-        Padding(
-          padding: const EdgeInsets.only(right: profileEditLinkPaddingRight),
+        const Padding(
+          padding: EdgeInsets.only(right: profileEditLinkPaddingRight),
           child: Text(
             "Edit",
             style: profileEditLinkStyle,
@@ -173,7 +173,7 @@ class _AboutProfileState extends State<AboutProfile> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Text(
+          const Text(
             "Verification",
             style: profileSubHeadingStyle,
           ),

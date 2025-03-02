@@ -168,14 +168,14 @@ class _UpiPaymentScreenState extends State<UpiPaymentScreen> {
                   ),
                   ExpansionTile(
                     leading: Padding(
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                         top: expansionTileLeadingPaddingTop,
                         right: 10,
                       ),
                       child: Image.asset("assets/Paytm_Logo.png"),
                     ),
-                    title: Text("Paytm", style: expansionTileTitleTextStyle),
-                    trailing: Icon(
+                    title: const Text("Paytm", style: expansionTileTitleTextStyle),
+                    trailing: const Icon(
                       Icons.chevron_right,
                       size: expansionTileTrailingIconSize,
                       color: Colors.blue,

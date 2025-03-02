@@ -24,8 +24,8 @@ class TermsCondtionsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(screenPadding),
+    return const Padding(
+      padding: EdgeInsets.all(screenPadding),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[

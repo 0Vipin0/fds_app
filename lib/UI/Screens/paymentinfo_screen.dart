@@ -276,7 +276,7 @@ class ProfileHeaderWidget extends StatelessWidget {
             radius: profileHeaderRadius,
             child: Image.asset("assets/Victor.png"),
           ),
-          Column(
+          const Column(
             children: <Widget>[
               Text("Victor Niculici", style: profileHeaderNameTextStyle),
               SizedBox(height: profileHeaderTextSpacing),

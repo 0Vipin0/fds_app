@@ -105,7 +105,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                SizedBox(height: screenHeadingSizedBoxHeight),
+                const SizedBox(height: screenHeadingSizedBoxHeight),
                 const Padding(
                   padding: EdgeInsets.only(left: 10),
                   child: Text("Add Payment Method", style: screenHeadingStyle),
@@ -117,7 +117,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                     style: screenSubHeadingStyle,
                   ),
                 ),
-                SizedBox(height: paymentMethodsSizedBoxHeight),
+                const SizedBox(height: paymentMethodsSizedBoxHeight),
                 Padding(
                   padding: const EdgeInsets.all(paymentMethodTilePadding),
                   child: Container(
@@ -157,7 +157,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: paymentMethodsSpacingHeight),
+                const SizedBox(height: paymentMethodsSpacingHeight),
                 Padding(
                   padding: const EdgeInsets.all(paymentMethodTilePadding),
                   child: Container(
