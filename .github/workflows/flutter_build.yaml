@@ -47,7 +47,7 @@ jobs:
           cp build/app/outputs/flutter-apk/*.apk build/android/outputs/apk/
       - name: Upload Android APK
         if: matrix.platform == 'android'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: android-apk
           path: build/android/outputs/apk/
@@ -58,7 +58,7 @@ jobs:
 
       - name: Upload Linux Artifact
         if: matrix.platform == 'linux'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: linux-build
           path: build/linux/x64/release/bundle/
@@ -69,7 +69,7 @@ jobs:
 
       - name: Upload Windows Artifact
         if: matrix.platform == 'windows'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: windows-build
           path: build/windows/x64/release/bundle/
