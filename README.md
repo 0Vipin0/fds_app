@@ -13,7 +13,27 @@ Loney is a modern and user-friendly loan application UI built with Flutter, desi
 ## Screenshots
 
 <p>
-  <img src="path/to/screenshot1.png" alt="Screenshot 1" width="300">
+<img src="screenshot/1.png" alt="Screenshot 1" width="300">
+<img src="screenshot/2.png" alt="Screenshot 2" width="300">
+<img src="screenshot/3.png" alt="Screenshot 3" width="300">
+</p>
+<p>
+<img src="screenshot/4.png" alt="Screenshot 4" width="300">
+<img src="screenshot/5.png" alt="Screenshot 5" width="300">
+<img src="screenshot/6.png" alt="Screenshot 6" width="300">
+</p>
+<p>
+<img src="screenshot/7.png" alt="Screenshot 7" width="300">
+<img src="screenshot/8.png" alt="Screenshot 8" width="300">
+<img src="screenshot/9.png" alt="Screenshot 9" width="300">
+</p>
+<p>
+<img src="screenshot/10.png" alt="Screenshot 10" width="300">
+<img src="screenshot/11.png" alt="Screenshot 11" width="300">
+<img src="screenshot/12.png" alt="Screenshot 12" width="300">
+</p>
+<p>
+<img src="screenshot/14.png" alt="Screenshot 14" width="300">
 </p>
 
 ## Build and Release
